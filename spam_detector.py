@@ -146,7 +146,8 @@ sns.heatmap(
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Spam Mail Detector - Confusion Matrix")
-
+plt.tight_layout()
+plt.savefig("confusion_matrix.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 
