@@ -58,15 +58,22 @@ Multinomial Naive Bayes is used to classify the TF-IDF features into two classes
 
 ## 📈 Model Evaluation
 
-The model is evaluated using:
+The Multinomial Naive Bayes model achieved an accuracy of **97.04%** on the test dataset.
 
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
+### Classification Report
 
-The project also displays a confusion matrix using Seaborn.
+| Class                | Precision | Recall |   F1-Score |  Support |
+| -------------------- | --------: | -----: | ---------: | -------: |
+| Ham                  |      0.97 |   1.00 |       0.98 |      966 |
+| Spam                 |      1.00 |   0.78 |       0.88 |      149 |
+| **Overall Accuracy** |           |        | **97.04%** | **1115** |
+
+### 📊 Confusion Matrix
+
+The confusion matrix shows the correctly and incorrectly classified Ham and Spam messages.
+
+![Confusion Matrix](confusion_matrix.png)
+
 
 ## 📁 Project Structure
 
